@@ -1005,7 +1005,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     # parser.add_argument("--use-noise-morpher", help="Whether to use noise-morphing or not. Defaults to True.", type=lambda x:bool(distutils.util.strtobool(x)), default=defaults["use_noise_morpher"])
     parser.add_argument("--force-overwrite", help="Re-download, extract, and parse data", type=lambda x:bool(distutils.util.strtobool(x)), default=False)
-    parser.add_argument("--dataset", help="Which dataset do you want?", type=str, default='ml-20m')
+    parser.add_argument("--dataset", help="Which dataset do you want?", type=str, default='ml-100k')
     args = parser.parse_args()
 
     force_overwrite = args.force_overwrite
